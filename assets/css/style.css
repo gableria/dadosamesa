@@ -1,0 +1,216 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+  /*background-image: url("../../img/mesa.svg");*/
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 400;
+  color: #333;
+  }
+
+h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+a {
+  color: #e6007e;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #7dc6b4;
+}
+
+.avatar img{
+  width: 200px;
+}
+
+.container-fluid {
+  padding:3% 5%;
+
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  border-bottom: solid 1px #333;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #000;
+  font-size: 45px;
+  margin: 0;
+}
+
+.banner p {
+  color: #000;
+  font-size: 24px;
+}
+
+.btn-primary{
+  background-color: transparent;
+  color: #e6007e;
+  border: solid 1px #e6007e;
+  border-radius: 2px;
+}
+
+.btn-primary:hover{
+  background-color: #e6007e;
+  border: none;
+}
+
+.footer {
+  background: #fff;
+  border-top: solid 1px #333;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #b2b2b2;
+}
+
+.laranja .img-fluid {
+  border: 1px solid #eb5e41;
+}
+
+.magenta .img-fluid {
+  border: 1px solid #e6007e;
+}
+
+.verde .img-fluid {
+  border: 1px solid #7dc6b4;
+}
+
+.legenda {
+  padding: 1rem 0;
+}
+
+.legenda img{
+  height: 30px;
+  margin: 0 1rem;
+}
+
+#logo {
+  width: 580px;
+  padding: 1em;
+}
+
+.nav-link {
+  font-weight: 400;
+  border: none;
+  background: none;
+  color: #000;
+}
+
+.nav-item button:hover, .nav-item.laranja button:focus {
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-item.laranja button:hover, .nav-item.laranja button:focus {
+  color: #eb5e41;
+  font-weight: 500;
+}
+
+.nav-item.magenta button:hover, .nav-item.magenta button:focus {
+  color: #e6007e;
+  font-weight: 500;
+}
+
+.nav-item.verde button:hover, .nav-item.verde button:focus {
+  color: #7dc6b4;
+}
+
+/* Overlay nas imagens */
+
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+/* Logo media queries */
+@media (min-width: 500px) {
+  #logo {
+    width: 460px
+  }
+}
+
+@media (min-width: 800px) {
+   #logo {
+    width: 580px
+  }
+}
+
+@media (min-width: 1000px) {
+  #logo {
+    width: 580px
+  }
+}
+
+/* 
+laranja: #eb5e41;
+magenta: #e6007e;
+verde: #7dc6b4;
+*/

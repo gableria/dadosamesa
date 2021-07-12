@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Dados à Mesa</title>
+</head>
+
+
+<body>
+  <!-- BANNER -->
+<div class="banner">
+	<img src="img/dadosamesa.svg" id="logo">
+	
+  <!-- NAVEGAÇÃO -->
+
+	<ul class="nav justify-content-center" id="myTab" role="tablist">
+	  <li class="nav-item" role="presentation">
+	    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Projeto</button>
+	  </li>
+	  <li class="nav-item laranja" role="presentation">
+	    <button class="nav-link" id="galeria1-tab" data-bs-toggle="tab" data-bs-target="#galeria1" type="button" role="tab" aria-controls="galeria1" aria-selected="false">Produção local</button>
+	  </li>
+	  <li class="nav-item magenta" role="presentation">
+	    <button class="nav-link" id="galeria2-tab" data-bs-toggle="tab" data-bs-target="#galeria2" type="button" role="tab" aria-controls="galeria2" aria-selected="false">Segurança alimentar</button>
+	  </li>
+	  <li class="nav-item verde" role="presentation">
+	    <button class="nav-link" id="galeria3-tab" data-bs-toggle="tab" data-bs-target="#galeria3" type="button" role="tab" aria-controls="galeria3" aria-selected="false">Trabalho informal</button>
+	  </li>
+	  <li class="nav-item" role="presentation">
+	    <button class="nav-link" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="false">Sobre</button>
+	  </li>
+	</ul>
+
+</div>
+  <!-- FIM BANNER -->
+
+  <!-- ABAS -->
+<div class="tab-content" id="myTabContent">
+
+  <!-- ABA 1 -->
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  	<!-- CONTAINER 1 -->
+  	<div class="container-fluid">		
+
+		<div class="row g-0">
+			<div class="col-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Some tooltip text!">
+				<img src="img/1/mkpM1.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-4">
+				<img src="img/2/mkpM2.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-4">
+				<img src="img/3/mkpM3.png" class="img-fluid" alt=""> 
+			</div>
+		</div>
+
+		<div class="row g-0">
+			<div class="col-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Some tooltip text!">
+				<img src="img/1/mkpG1.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-4">
+				<img src="img/2/mkpG2.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-4">
+				<img src="img/3/mkpG3.png" class="img-fluid" alt=""> 
+			</div>
+		</div>
+
+		<div class="row g-0">
+			<div class="col-10 offset-1">
+				<h1> Dados à Mesa é um Trabalho Final de Graduação no curso de Arquitetura e Urbanismo que explora formas de visualização da informação sobre sistemas alimentares no território.</h1>
+				<a class="btn btn-primary btn-lg" href="https://issuu.com/gabrielamomberg/docs/2020_gabrielamomberg_tfg" role="button" target="_blank">Acessar caderno</a>
+			</div> 
+		</div>
+
+	</div>
+	<!-- FIM CONTAINER 1 -->
+  </div>
+  <!-- FIM ABA 1 -->
+
+  <!-- ABA 2 -->
+  <div class="tab-pane fade" id="galeria1" role="tabpanel" aria-labelledby="galeria1-tab">
+	<!-- CONTAINER 2 -->
+  	<div class="container-fluid laranja">
+		<div class="row g-1 legenda">
+			<div class="col-sm-3 col-md-1">
+				<img src="img/1/pobreza.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#e6007e">
+				<h3>Pobreza</h3>
+				<p>Famílias em situação de extrema pobreza, em milhares</p>
+			</div>
+			<div class="col-sm-3 col-md-1">
+				<img src="img/1/curto.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#7dc6b4">
+				<h3>Circuitos curtos</h3>
+				<p>Pontos de distribuição de alimentos em circuito curto</p>
+			</div>
+			<div class="col-sm-3 col-md-1">
+				<img src="img/1/solo.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#eb5e41">
+				<h3>Áreas vagas</h3>
+				<p>Proporção de área de terrenos vagos, praças e canteiros</p>
+			</div>
+		</div>
+
+		<div class="row g-1">
+			<div class="col-1">
+				<img src="img/1/1.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/2.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/3.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/4.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/5.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/6.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/7.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/8.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/9.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/10.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/11.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/12.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/13.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/14.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/15.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/16.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/17.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/18.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/19.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/20.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/21.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/22.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/23.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/24.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/25.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/26.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/27.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/28.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/29.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/30.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/31.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/32.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/33.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/34.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/35.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/36.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/37.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/38.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/39.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/40.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/41.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/42.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/43.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/44.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/45.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/46.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/47.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/48.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/49.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/50.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/51.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/52.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/53.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/54.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/55.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/56.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/57.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/58.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/59.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/60.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/61.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/62.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/63.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/64.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/65.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/66.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/67.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/68.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/69.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/70.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/71.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/72.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/73.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/74.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/75.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/76.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/77.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/78.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/79.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/80.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/81.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/82.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/83.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/84.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/85.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/86.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/87.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/88.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/89.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/90.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/91.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/92.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/93.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/94.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/95.png" class="img-fluid" alt=""> 
+			</div>
+
+			<div class="col-1">
+				<img src="img/1/96.png" class="img-fluid" alt=""> 
+			</div>
+
+		</div>
+
+		<!-- FIM ROW GUARDANAPOS 1 -->
+<br>
+		<div class="row g-1">
+			<div class="col-6">
+				<img src="img/1/M1.png" class="img-fluid" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- FIM CONTAINER 2 -->
+  </div>
+  <!-- FIM ABA 2 -->
+
+  <!-- ABA 3 -->
+  <div class="tab-pane fade" id="galeria2" role="tabpanel" aria-labelledby="galeria2-tab">
+  	<!-- CONTAINER 3 -->
+  	<div class="container-fluid magenta">
+		<div class="row g-1 legenda">
+			<div class="col-sm-3 col-lg-1">
+				<img src="img/2/natura.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-lg-2" style="color:#7dc6b4">
+				<h3>Naturais</h3>
+				<p>Estabelecimentos (10) de aquisição de alimentos in natura </p>
+			</div>
+			<div class="col-sm-3 col-lg-1">
+				<img src="img/2/ultra.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-lg-2" style="color:#eb5e41">
+				<h3>Ultraprocessados</h3>
+				<p>Estabelecimentos (10) de aquisição de alimentos ultraprocessados</p>
+			</div>
+			<div class="col-sm-3 col-lg-1">
+				<img src="img/2/misto.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-lg-2" style="color:#eb5e41">
+				<h3>Mistos</h3>
+				<p>Estabelecimentos (10) mistos</p>
+			</div>
+			<div class="col-sm-3 col-lg-1">
+				<img src="img/2/ipvs.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-lg-2" style="color:#e6007e">
+				<h3>Vulnerabilidade</h3>
+				<p>Proporção de área de média a alta vulnerabilidade social</p>
+			</div>
+		</div>
+
+		<div class="row g-1">
+			<div class="col-1">	
+				<img src="img/2/1.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/2.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/3.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/4.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/5.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/6.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/7.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/8.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/9.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/10.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/11.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/12.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/13.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/14.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/15.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/16.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/17.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/18.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/19.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/20.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/21.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/22.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/23.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/24.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/25.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/26.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/27.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/28.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/29.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/30.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/31.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/32.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/33.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/34.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/35.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/36.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/37.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/38.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/39.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/40.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/41.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/42.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/43.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/44.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/45.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/46.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/47.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/48.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/49.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/50.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/51.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/52.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/53.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/54.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/55.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/56.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/57.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/58.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/59.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/60.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/61.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/62.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/63.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/64.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/65.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/66.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/67.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/68.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/69.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/70.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/71.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/72.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/73.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/74.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/75.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/76.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/77.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/78.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/79.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/80.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/81.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/82.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/83.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/84.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/85.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/86.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/87.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/88.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/89.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/90.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/91.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/92.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/93.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/94.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/95.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/2/96.png" class="img-fluid" alt=""> 
+			</div>
+
+		</div>
+<!-- FIM ROW GUARDANAPOS 2 -->
+<br>
+		<div class="row g-1">
+			<div class="col-6">
+				<img src="img/2/M2.png" class="img-fluid" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- FIM CONTAINER 3 -->
+  </div>
+
+  <!-- ABA 4 -->
+  <div class="tab-pane fade" id="galeria3" role="tabpanel" aria-labelledby="galeria3-tab">
+  	<!-- CONTAINER 4 -->
+  	<div class="container-fluid verde">
+		<div class="row g-1 legenda">
+			<div class="col-sm-3 col-md-1">
+				<img src="img/3/cicli.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#e6007e">
+				<h3>Entregadores</h3>
+				<p>Microempreendedores individuais na categoria entrega rápida residentes no distrito</p>
+			</div>
+			<div class="col-sm-3 col-md-1">
+				<img src="img/3/dist.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#eb5e41">
+				<h3>Deslocamento</h3>
+				<p>Quilômetros percorridos, em média, entre moradia e local de trabalho de entregadores residentes no distrito</p>
+			</div>
+			<div class="col-sm-3 col-md-1">
+				<img src="img/3/renda.svg" class="float-end">
+			</div>
+			<div class="col-sm-9 col-md-3" style="color:#7dc6b4">
+				<h3>Renda média</h3>
+				<p>Renda média domiciliar em relação ao valor máximo do município</p>
+			</div>
+		</div>
+
+		<div class="row g-1">
+			<div class="col-1">	
+				<img src="img/3/1.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/2.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/3.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/4.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/5.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/6.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/7.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/8.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/9.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/10.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/11.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/12.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/13.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/14.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/15.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/16.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/17.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/18.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/19.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/20.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/21.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/22.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/23.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/24.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/25.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/26.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/27.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/28.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/29.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/30.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/31.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/32.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/33.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/34.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/35.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/36.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/37.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/38.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/39.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/40.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/41.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/42.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/43.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/44.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/45.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/46.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/47.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/48.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/49.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/50.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/51.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/52.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/53.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/54.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/55.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/56.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/57.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/58.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/59.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/60.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/61.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/62.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/63.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/64.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/65.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/66.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/67.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/68.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/69.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/70.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/71.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/72.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/73.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/74.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/75.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/76.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/77.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/78.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/79.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/80.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/81.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/82.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/83.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/84.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/85.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/86.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/87.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/88.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/89.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/90.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/91.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/92.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/93.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/94.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/95.png" class="img-fluid" alt=""> 
+			</div>	
+				
+			<div class="col-1">	
+				<img src="img/3/96.png" class="img-fluid" alt=""> 
+			</div>
+		</div>
+<!-- FIM ROW GUARDANAPOS 3 -->
+<br>
+		<div class="row g-1">
+			<div class="col-6">
+				<img src="img/3/M3.png" class="img-fluid" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- FIM CONTAINER 4 -->
+  	<!-- FIM ABA 4 -->
+  </div>
+  
+  <!-- ABA 5 -->
+  <div class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+  	<!-- CONTAINER 5 -->
+  	<div class="container-fluid">		
+
+		<div class="row g-1">
+			<div class="col-sm-12 col-md-2 offset-3 avatar">
+				<img src="img/avatar.png">
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<h5> Gabriela é arquiteta urbanista formada pela FAU-USP em 2020 e tem interesse de pesquisa em visualização da informação. Desenvolve projetos de design gráfico com foco em políticas públicas para o território e seus habitantes, e interpreta o design como uma ferramenta para a o exercício da cidadania.</h5>
+				<a class="btn btn-primary" href="https://www.behance.net/gmoma" role="button" target="_blank">behance</a>
+				<a class="btn btn-primary" href="#" role="button" target="_blank">tumblr</a>
+				<!--<a class="btn btn-primary" href="#" role="button" target="_blank">dribbble</a>-->
+			</div>
+		</div>
+
+	</div>
+	<!-- FIM CONTAINER 5 -->
+  </div>
+  <!-- FIM ABA 5 -->
+
+</div>
+<!-- FIM DO CONTEUDO ABAS -->
+
+  <!-- Footer section -->
+<div class="footer">
+	<h6> Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo | Gabriela Momberg Araújo | Orientação: Prof. Dr. Leandro Velloso </h6>
+</div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js?n=<?=rand()?>"></script>
+<script>includeHTML();</script>
+
+</body>
+
+</html>
